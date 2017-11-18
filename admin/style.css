@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+html
+{
+	height:100%;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+.top_con_pos1
+{
+	float:left;
+	margin-right:1px;
+}
+.top_con_pos2
+{
+	float:right;
+	margin-left:3px;
+}
+.font_size1
+{
+	font-size:12px;
+	color:#2e9fff;
+}
+.font_size2
+{
+	font-size:11px;
+	color:#c4c4c4;
+}
+.font_size3
+{
+	font-size:11px;
+	color:#898989;
+}
+.hrs_comments_part_center
+{
+	margin:1px auto;
+	padding:7px;
+	/*background:#ffff;
+	border:#f3f3f3 1px solid;*/
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+}
+.hrs_comments_part_bottom
+{
+	margin:0 auto;
+	padding:0px;
+}
+
+.hrs_add_comments
+{
+	margin:0 auto;
+	padding:0px;
+	background:#f5f6fb;
+	border:#eaedf8 2px solid;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+}
+h2
+{
+	font:bold 12px/30px Tahoma, Geneva, sans-serif;
+	color:#fff;
+	background:#549bd9;
+	padding:0px 10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	text-transform:uppercase;
+}
+.hrs_add_comments_part
+{
+	margin:0 auto;
+	padding:10px;
+}
+.hrs_add_comments_element
+{
+	padding:2px 0px;
+}
+label
+{
+	font:normal 12px/32px Tahoma, Geneva, sans-serif;
+	color:#000;
+}
+.textbox_small
+{
+	font:normal 12px/24px Tahoma, Geneva, sans-serif;
+	color:#333;
+	padding:0 5px;
+	box-shadow:#999 0 0 5px;
+	border:none;
+	background:#fff;
+	width:75px;
+	/*height:24px;*/
+	margin:0 5px;
+}
+.textarea
+{
+	font:normal 12px/18px Tahoma, Geneva, sans-serif;
+	color:#333;
+	padding:0 .5%;
+	box-shadow:#999 0 0 5px;
+	border:none;
+	background:#fff;
+	width:99%;
+	height:100px;
+}
+.textbox_big
+{
+	font:normal 12px/24px Tahoma, Geneva, sans-serif;
+	color:#333;
+	padding:0 .5%;
+	box-shadow:#999 0px 0px 5px;
+	border:none;
+	background:#fff;
+	width:48.5%;
+	/*height:24px;*/
+}
+.textbox_big_pos1
+{
+	float:left;
+}
+.textbox_big_pos2
+{
+	float:right;
+}
+.button
+{
+	float:left;
+	background:#f7d24d;
+	padding:0px 14px;
+	border:#ac9130 2px solid;
+	font:bold 12px/32px Tahoma, Geneva, sans-serif;
+	color:#4f4319;
+	text-transform:uppercase;
+	height:32px;
+	text-shadow:#fff 1px 1px 1px;
+	cursor:pointer;
+	margin:4px 0px;
+}
+.hrs_reply
+{
+	margin:30px auto;
+	padding:10px;
+	background:#fdfdfd;
+	border:#f3f3f3 1px solid;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	-o-border-radius:7px;
+	box-shadow:0px 0px 7px #999;
+	width:500px;
+}
+.footer
+{
+	margin:0 auto;
+	padding-bottom:10px;
+	
+	text-align:right;
+	font:normal .7em/150% Tahoma, Geneva, sans-serif;
+	color:#666;
+}
+/* all */
+::-webkit-input-placeholder { color:#999; }
+::-moz-input-placeholder { color:#999; } /* firefox 19+ */
+input:-moz-placeholder { color:#999; }
+::-webkit-textarea-placeholder { color:#999; }
+::-moz-textarea-placeholder { color:#999; } /* firefox 19+ */
+textarea:-moz-placeholder { color:#999; }
+
+.hasPlaceholder {
+    color: #777;
+}

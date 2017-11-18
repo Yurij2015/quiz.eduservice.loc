@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="quiz@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="quiz">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ais_school"/>
+    <schema id="4" parent="1" name="clinic"/>
+    <schema id="5" parent="1" name="cloud_service"/>
+    <schema id="6" parent="1" name="edu_service"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="meindeutsch"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="poltava-mebel"/>
+    <schema id="12" parent="1" name="serviceСentre"/>
+    <schema id="13" parent="1" name="serviceСentre38"/>
+    <schema id="14" parent="1" name="sys"/>
+    <table id="15" parent="2" name="category"/>
+    <table id="16" parent="2" name="hioxpm"/>
+    <table id="17" parent="2" name="quiz"/>
+    <table id="18" parent="2" name="quizresults"/>
+    <table id="19" parent="2" name="settings"/>
+    <column id="20" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="15" name="category">
+      <Position>2</Position>
+      <DataType>varchar(150)|0</DataType>
+    </column>
+    <column id="22" parent="15" name="status">
+      <Position>3</Position>
+      <DataType>enum(&apos;susbend&apos;, &apos;release&apos;)|0</DataType>
+    </column>
+    <index id="23" parent="15" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="15" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <column id="25" parent="16" name="username">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="16" name="password">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="27" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="17" name="catid">
+      <Position>2</Position>
+      <DataType>varchar(6)|0</DataType>
+    </column>
+    <column id="30" parent="17" name="question">
+      <Position>3</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <column id="31" parent="17" name="opt1">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="32" parent="17" name="opt2">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="33" parent="17" name="opt3">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="34" parent="17" name="opt4">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="35" parent="17" name="answer">
+      <Position>8</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="36" parent="17" name="datee">
+      <Position>9</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="37" parent="17" name="status">
+      <Position>10</Position>
+      <DataType>enum(&apos;susbend&apos;, &apos;release&apos;)|0</DataType>
+    </column>
+    <index id="38" parent="17" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="17" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <column id="40" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="18" name="name">
+      <Position>2</Position>
+      <DataType>varchar(150)|0</DataType>
+    </column>
+    <column id="42" parent="18" name="cat_id">
+      <Position>3</Position>
+      <DataType>int(20)|0</DataType>
+    </column>
+    <column id="43" parent="18" name="correct_ans">
+      <Position>4</Position>
+      <DataType>int(20)|0</DataType>
+    </column>
+    <column id="44" parent="18" name="wrong_ans">
+      <Position>5</Position>
+      <DataType>int(20)|0</DataType>
+    </column>
+    <column id="45" parent="18" name="marks">
+      <Position>6</Position>
+      <DataType>int(20)|0</DataType>
+    </column>
+    <column id="46" parent="18" name="datee">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="47" parent="18" name="examtime">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="48" parent="18" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="18" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <column id="50" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="19" name="pagenum">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="52" parent="19" name="examtime">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="53" parent="19" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="19" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
